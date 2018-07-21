@@ -8,7 +8,7 @@ import java.net.URLConnection;
 
 public class Tes5 {
 
-    public class Test2 {
+    public static class Test2 {
         public static void main(String[] args) {
 
             new ReadByGet().start();
@@ -21,10 +21,10 @@ public class Tes5 {
 
 
                     URL url = new URL("http://hq.sinajs.cn/list=sh601006");
-                    url.openConnection connection = url.openConnection();
+                    url.Openconnection = url.openConnection();
                     InputStream is = ((URLConnection) connection).getInputStream();
                     InputStreamReader isr = new InputStreamReader(is);
-                    BufferedReader br = new BufferedBuilder(isr);
+                    BufferedReader br = new BufferedReader(isr);
 
                     String line;
                     StringBuilder builder = new StringBuilder();
